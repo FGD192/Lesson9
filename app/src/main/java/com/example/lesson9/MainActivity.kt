@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setUpSpinner()
         chooseCity()
     }
-
+    
     private fun initView(){
         spCities = findViewById<Spinner>(R.id.spCities)
         tvNameOfCity = findViewById<TextView>(R.id.tvNameOfCity)
