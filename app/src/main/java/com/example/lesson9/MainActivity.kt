@@ -32,18 +32,10 @@ class MainActivity : AppCompatActivity() {
     private fun chooseCity(){
         spCities?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                    when(position){
-                        1 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        2 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        3 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        4 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        5 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        6 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        7 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        8 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        9 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                        10 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                    }
+
+                        if (position!=0)
+                        tvNameOfCity?.text = parent.getItemAtPosition(position).toString()
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
