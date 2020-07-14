@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lesson9</string>
+    <string name="tv_cityname">Название города</string>
+    <string-array name="cities">
+        <item>Выберите город</item>
+        <item>Париж</item>
+        <item>Лисабон</item>
+        <item>Берлин</item>
+        <item>Рим</item>
+        <item>Токио</item>
+        <item>Сеул</item>
+        <item>Лондон</item>
+        <item>Мадрид</item>
+        <item>Нью-Йорк</item>
+        <item>Гонконг</item>
+    </string-array>
+
+</resources>
