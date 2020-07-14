@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setUpSpinner()
         chooseCity()
     }
-    
+
     private fun initView(){
         spCities = findViewById<Spinner>(R.id.spCities)
         tvNameOfCity = findViewById<TextView>(R.id.tvNameOfCity)
@@ -32,8 +32,6 @@ class MainActivity : AppCompatActivity() {
     private fun chooseCity(){
         spCities?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-
-                if (position != 0) {
                     when(position){
                         1 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
                         2 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
@@ -45,7 +43,6 @@ class MainActivity : AppCompatActivity() {
                         8 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
                         9 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
                         10 -> tvNameOfCity?.setText(parent.getItemAtPosition(position).toString())
-                    }
                     }
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {}
